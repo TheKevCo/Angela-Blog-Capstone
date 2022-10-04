@@ -13,6 +13,7 @@ from wtforms.validators import DataRequired, Email
 from wtforms import StringField, SubmitField, PasswordField
 from functools import wraps
 import os
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get("FLASK_SECRET_KEY")
 ckeditor = CKEditor(app)
