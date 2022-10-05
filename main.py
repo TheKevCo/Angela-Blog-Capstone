@@ -113,7 +113,6 @@ def admin_only(f):
 
 
 
-# db.create_all()
 
 @login_manager.user_loader
 def load_user(user_id):
